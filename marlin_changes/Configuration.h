@@ -826,7 +826,7 @@
 //
 #define E_FULL_STEPS_PER_ROTATION 200
 #define E_MICROSTEPS 16
-#define E_EFFECTIVE_RADIUS 5.25
+#define E_EFFECTIVE_RADIUS (320 / (83 * PI))
 
 // delta speeds must be the same on xyz
 #define DEFAULT_XYZ_STEPS_PER_UNIT ((XYZ_FULL_STEPS_PER_ROTATION) * (XYZ_MICROSTEPS) / double(XYZ_BELT_PITCH) / double(XYZ_PULLEY_TEETH))
