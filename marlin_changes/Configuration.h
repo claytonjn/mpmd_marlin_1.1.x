@@ -509,9 +509,9 @@
   //#define DEFAULT_Kd 440
 
   // Monoprice Mini Delta
-  #define DEFAULT_Kp  19.97
-  #define DEFAULT_Ki  1.28
-  #define DEFAULT_Kd  78.14
+  #define DEFAULT_Kp  16.57
+  #define DEFAULT_Ki  0.89
+  #define DEFAULT_Kd  77.36
  
 #endif // PIDTEMP
 
@@ -566,9 +566,9 @@
   //#define DEFAULT_bedKd 1675.16
 
   // Monoprice Mini Delta, 60W power supply
-  #define DEFAULT_bedKp  24.62
-  #define DEFAULT_bedKi  3.71
-  #define DEFAULT_bedKd  40.85
+  #define DEFAULT_bedKp  46.97
+  #define DEFAULT_bedKi  6.23
+  #define DEFAULT_bedKd  88.51
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at
   // 90 degreesC for 8 cycles.
@@ -872,7 +872,7 @@
  * When changing speed and direction, if the difference is less than the
  * value set here, it may happen instantaneously.
  */
-#define DEFAULT_XJERK  20.0
+#define DEFAULT_XJERK  30
 #define DEFAULT_YJERK  DEFAULT_XJERK
 #define DEFAULT_ZJERK  DEFAULT_XJERK  // must be same as XY for delta
 #define DEFAULT_EJERK  5.0
@@ -1016,7 +1016,7 @@
 
 #define X_PROBE_OFFSET_FROM_EXTRUDER  0
 #define Y_PROBE_OFFSET_FROM_EXTRUDER  0
-#define Z_PROBE_OFFSET_FROM_EXTRUDER  0
+#define Z_PROBE_OFFSET_FROM_EXTRUDER  0.4
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE  0
